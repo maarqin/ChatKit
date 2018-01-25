@@ -639,7 +639,7 @@ public class MessageHolders {
         }
 
         @Override
-        public final void applyStyle(MessagesListStyle style) {
+        public /*final*/ void applyStyle(MessagesListStyle style) {
             super.applyStyle(style);
             if (time != null) {
                 time.setTextColor(style.getIncomingImageTimeTextColor());
@@ -690,7 +690,7 @@ public class MessageHolders {
         }
 
         @Override
-        public final void applyStyle(MessagesListStyle style) {
+        public /*final*/ void applyStyle(MessagesListStyle style) {
             super.applyStyle(style);
             if (time != null) {
                 time.setTextColor(style.getOutcomingImageTimeTextColor());
